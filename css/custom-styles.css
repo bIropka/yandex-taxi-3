@@ -140,9 +140,19 @@ h1 {
   color: #b10d0e;
   line-height: 1;
 }
-@media (max-width: 768px) {
+@media (max-width: 1230px) {
   h1 {
     font-size: 32px;
+  }
+}
+@media (max-width: 980px) {
+  h1 br {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 26px;
   }
 }
 h2 {
@@ -390,9 +400,38 @@ header[role='banner'] .logo span {
   letter-spacing: 0;
   margin-left: -5px;
 }
+@media (max-width: 980px) {
+  .top-block .top-marker {
+    top: 100px;
+    width: 132px;
+    height: 144px;
+    background-size: cover;
+  }
+  .top-block .top-marker span {
+    font-size: 11px;
+    letter-spacing: 1px;
+  }
+  .top-block .top-marker span:first-of-type {
+    font-size: 52px;
+  }
+}
+@media (max-width: 768px) {
+  .top-block .top-marker {
+    display: none;
+  }
+}
 .top-block .top-advantages-list {
   display: inline-block;
   vertical-align: top;
+}
+@media (max-width: 768px) {
+  .top-block .top-advantages-list {
+    display: block;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 15px;
+    margin: 25px 0;
+  }
 }
 .top-block .top-advantages-item {
   display: flex;
@@ -432,6 +471,11 @@ header[role='banner'] .logo span {
 .top-block .top-advantages-item:nth-of-type(3):after {
   background-position: -200px 0;
 }
+@media (max-width: 768px) {
+  .top-block .top-advantages-item br {
+    display: none;
+  }
+}
 .top-block .top-buttons {
   display: inline-block;
   vertical-align: top;
@@ -458,6 +502,22 @@ header[role='banner'] .logo span {
   width: 26px;
   height: 26px;
   background: url(../source/images/sprite-2.png) no-repeat;
+}
+@media (max-width: 1230px) {
+  .top-block .top-buttons button {
+    display: block;
+  }
+}
+@media (max-width: 980px) {
+  .top-block .top-buttons button {
+    display: inline-block;
+  }
+}
+@media (max-width: 768px) {
+  .top-block .top-buttons button {
+    display: block;
+    margin: 20px auto;
+  }
 }
 .top-block .top-buttons .to-questionnaire {
   border: 1px solid #000;
@@ -497,6 +557,11 @@ header[role='banner'] .logo span {
   -moz-box-shadow: inset 0 0 10px 1px rgba(182, 31, 32, 0.5);
   box-shadow: inset 0 0 10px 1px rgba(182, 31, 32, 0.5);
 }
+@media (max-width: 980px) {
+  .top-block .top-buttons {
+    display: block;
+  }
+}
 .top-block .top-promo {
   margin: 100px 0 0 0;
 }
@@ -514,6 +579,19 @@ header[role='banner'] .logo span {
   text-transform: uppercase;
   font-size: 37px;
   margin: 10px 0 0 0;
+}
+@media (max-width: 980px) {
+  .top-block .top-promo {
+    margin: 40px 0 0 0;
+  }
+}
+@media (max-width: 480px) {
+  .top-block .top-promo span:first-of-type {
+    font-size: 28px;
+  }
+  .top-block .top-promo span:last-of-type {
+    font-size: 32px;
+  }
 }
 /***********************************************************************************************************************
 *********** formula-for-success
@@ -598,6 +676,29 @@ header[role='banner'] .logo span {
   top: -10%;
   z-index: -1;
 }
+@media (max-width: 1230px) {
+  .formula-for-success {
+    display: block;
+    text-align: center;
+    margin: 50px 0;
+  }
+  .formula-for-success .summand,
+  .formula-for-success .plus {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .formula-for-success .equally {
+    display: none;
+  }
+  .formula-for-success .summa {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 640px) {
+  .formula-for-success {
+    display: none;
+  }
+}
 /***********************************************************************************************************************
 *********** advantages-icons-list
 ***********************************************************************************************************************/
@@ -667,6 +768,16 @@ header[role='banner'] .logo span {
   left: 0;
   bottom: 0;
 }
+@media (max-width: 640px) {
+  .advantages-icons-list .advantages-icons-item {
+    margin: 0 auto 50px;
+  }
+}
+@media (max-width: 1230px) {
+  .advantages-icons-list {
+    padding: 0 15px;
+  }
+}
 /***********************************************************************************************************************
 *********** steps
 ***********************************************************************************************************************/
@@ -731,6 +842,11 @@ header[role='banner'] .logo span {
   left: 50px;
   top: 130px;
 }
+@media (max-width: 1230px) {
+  .steps ul li:first-of-type:after {
+    display: none;
+  }
+}
 /***********************************************************************************************************************
 *********** form-questionnaire
 ***********************************************************************************************************************/
@@ -788,6 +904,12 @@ header[role='banner'] .logo span {
   top: 15px;
   background: #3591cd;
 }
+@media (max-width: 640px) {
+  .form-questionnaire label {
+    width: 100%;
+    margin: 15px 0;
+  }
+}
 .form-questionnaire input {
   display: block;
   width: 100%;
@@ -807,6 +929,7 @@ header[role='banner'] .logo span {
   border: none;
   background: #edf1f1 url(../source/images/background-text-field.png) no-repeat right center;
   background-size: auto 100%;
+  resize: none;
 }
 .form-questionnaire button {
   width: 100%;
@@ -851,6 +974,12 @@ header[role='banner'] .logo span {
   align-items: flex-start;
   align-content: flex-start;
 }
+@media (max-width: 1230px) {
+  .advantages-images .advantages-images-list {
+    display: block;
+    text-align: center;
+  }
+}
 .advantages-images .advantages-images-item {
   width: 275px;
   padding: 0 20px 20px 20px;
@@ -878,6 +1007,12 @@ header[role='banner'] .logo span {
   text-align: center;
   margin: 15px 0 0 0;
   font-weight: 500;
+}
+@media (max-width: 1230px) {
+  .advantages-images .advantages-images-item {
+    display: inline-block;
+    margin: 15px;
+  }
 }
 .advantages-images .image-wrap {
   display: block;
@@ -908,6 +1043,8 @@ header[role='banner'] .logo span {
   margin: 0 0 80px 0;
 }
 .callback-block .sub-title {
+  display: block;
+  width: calc(100% - 300px);
   font-size: 18px;
   color: #fff;
   font-weight: 500;
@@ -920,6 +1057,8 @@ header[role='banner'] .logo span {
   font-weight: inherit;
 }
 .callback-block .title {
+  display: block;
+  width: calc(100% - 300px);
   font-size: 25px;
   color: #9ef2ff;
   font-weight: 700;
@@ -979,6 +1118,39 @@ header[role='banner'] .logo span {
   -webkit-box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, 0.5);
   box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 1230px) {
+  .callback-block br {
+    display: none;
+  }
+}
+@media (max-width: 980px) {
+  .callback-block .title,
+  .callback-block .sub-title {
+    width: 100%;
+  }
+  .callback-block .title {
+    padding-left: 0;
+  }
+  .callback-block .title:before {
+    display: none;
+  }
+  .callback-block .form-callback {
+    position: static;
+    margin-top: 25px;
+  }
+  .callback-block .form-callback button {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 640px) {
+  .callback-block {
+    padding: 25px;
+    margin-bottom: 30px;
+  }
+  .callback-block .form-callback {
+    width: 100%;
+  }
 }
 /***********************************************************************************************************************
 *********** prom-block

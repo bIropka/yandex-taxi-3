@@ -70,4 +70,11 @@ $(window).ready(function () {
         }
     });
 
+    $('.to-questionnaire').click(function(){
+
+        $('html, body').animate({scrollTop: $('.form-questionnaire').offset().top - 50}, 800);
+
+        return false;
+    });
+
 });
